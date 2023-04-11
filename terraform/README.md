@@ -13,12 +13,12 @@ There are a few assumptions about the terraform code.
 </ol>
 
 Running the code should be as easy as
-<ol>
+<ul>
   <li>`make setup`</li>
   <li>`make plan`</li>
   <li>`make apply`</li>
   <li>`make destroy`</li>
-</ol>
+</ul>
 
 ## Architecture
 ![Architecture](packer-ansible-terraform.png)

@@ -1,3 +1,5 @@
+all: clean
+
 setup:
 	$(MAKE) -C ec2 setup
 
