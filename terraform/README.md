@@ -18,10 +18,6 @@
 ## Table of contents
 
 - [Quick start](#quick-start)
-- [Status](#status)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Contributing](#contributing)
 - [Creators](#creators)
 - [Thanks](#thanks)
 - [Copyright and license](#copyright-and-license)
@@ -29,21 +25,21 @@
 
 ## Quick start
 
-Some text
+There are a few assumptions about the terraform code.
+# The code should be immutable
+# Mutable code should go into the terraform wrapper -> Makefile
 
-- Instruction 1
-- Instruction 2
-- Instruction 3
 
-## Status
-
-Here goes all the budgets
+Running the code should be as easy as
+- `make setup`
+- `make plan`
+- `make apply`
+- `make destroy`
 
 ## Architecture
 ![Architecture](packer-ansible-terraform.png)
 
-
-```Tree structure
+```
 .
 ├── Makefile
 ├── README.md
@@ -63,3 +59,8 @@ Here goes all the budgets
 └── modules
     └── terraform-aws-ec2-instance
 ```
+
+## Creators
+- Kirk Larsen - kirkl@slalom.com
+- Sahithya Kodam - sahithya.kodam@slalom.com
+- Kyle Clayborn - kyle.claycomb@slalom.com
