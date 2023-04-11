@@ -1,0 +1,26 @@
+---
+- hosts: all
+  vars:
+    - meta_app: "{{ ansible_local.meta.metadata.app }}"
+    - meta_env: "{{ ansible_local.meta.metadata.env }}"
+    - meta_region: "{{ ansible_local.meta.metadata.region }}"
+  become: true
+  pre_tasks:
+    - name: Update Yum Cache
+      command: yum makecache
+      args:
+        warn: False
+      tags:
+        - always
+
+- hosts: meta_instances
+  vars:
+    - meta_app: "{{ ansible_local.meta.metadata.app }}"
+    - meta_env: "{{ ansible_local.meta.metadata.env }}"
+    - meta_region: "{{ ansible_local.meta.metadata.region }}"
+  become: true
+  roles:
+    - brianshumate.consul
+  tags:
+    - build_consul
+    - build

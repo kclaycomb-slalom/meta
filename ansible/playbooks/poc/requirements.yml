@@ -1,0 +1,5 @@
+---
+- src: chrisevett.inspec
+  path: ../../roles
+- src: brianshumate.consul
+  path: ../../roles
