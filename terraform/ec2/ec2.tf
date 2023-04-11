@@ -4,8 +4,8 @@ module "ec2_instance" {
 
   name = "meta-onboarding-${data.aws_caller_identity.current.user_id}"
 
-  ami           = "ami-05ab8cfcdcf846624"
-  instance_type = "t4g.medium"
+  ami           = "ami-0f28f24910375a30a"
+  instance_type = "t3.medium"
   key_name      = aws_key_pair.generated_key.key_name
   monitoring    = true
   subnet_id     = data.aws_subnet.subnet_target.id

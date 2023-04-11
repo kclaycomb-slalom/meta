@@ -1,5 +1,6 @@
 data "aws_subnet" "subnet_target" {
   availability_zone_id = "usw2-az1"
+  vpc_id               = "vpc-dad992a2"
 }
 
 data "aws_caller_identity" "current" {}
