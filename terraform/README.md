@@ -6,17 +6,19 @@
 
 
 ## Quick start
-
 There are a few assumptions about the terraform code.
-# The code should be immutable
-# Mutable code should go into the terraform wrapper -> Makefile
-
+<ol>
+  <li>The terraform code should be immutable</li>
+  <li>Mutable code should go into the terraform wrapper -> Makefile</li>
+</ol>
 
 Running the code should be as easy as
-- `make setup`
-- `make plan`
-- `make apply`
-- `make destroy`
+<ol>
+  <li>`make setup`</li>
+  <li>`make plan`</li>
+  <li>`make apply`</li>
+  <li>`make destroy`</li>
+</ol>
 
 ## Architecture
 ![Architecture](packer-ansible-terraform.png)
