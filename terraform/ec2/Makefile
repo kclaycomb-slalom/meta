@@ -61,4 +61,4 @@ destroy: pull
 		-var "profile=$(PROFILE)"
 
 docs:
-	terraform-docs -c .terraform-docs.yml  md . > README.md
+	terraform-docs -c ../.terraform-docs.yml  md . > README.md
