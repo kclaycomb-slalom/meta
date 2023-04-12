@@ -7,6 +7,7 @@ all: clean
 clean:
 	rm -fr main.retry \
 	rm -fr ../../roles/chrisevett.inspec \
+	rm -fr ../../roles/brianshumate.consul \
 	rm -fr ~/.ansible/roles/*
 
 pull: clean
