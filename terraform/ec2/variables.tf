@@ -32,5 +32,5 @@ variable "ec2type" {
 
 variable "vpc_id" {
   type    = string
-  default = "vpc-dad992a2"
+  default = "vpc-0565b61a846eba05b"
 }

@@ -1,7 +1,7 @@
-resource "aws_eip" "ip-test-env" {
-  instance = module.ec2_instance.id
-  vpc      = true
-}
+#resource "aws_eip" "ip-test-env" {
+#  instance = module.ec2_instance.id
+#  vpc      = true
+#}
 
 resource "aws_security_group" "meta-sg" {
   vpc_id      = var.vpc_id
