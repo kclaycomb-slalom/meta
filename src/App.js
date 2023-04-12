@@ -7,12 +7,12 @@ import Search from './pages/Search';
 
 function App() {
   return (
- <div className="App"> 
+ <div className="App">
    <Switch>
       <Route strict exact path="/" component={CharactersList} />
       <Route strict exact path="/search" component={Search}/>
       <Route strict exact path="/:id" component={Character} />
-    
+
     </Switch>
     </div>
   );

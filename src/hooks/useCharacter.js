@@ -7,4 +7,3 @@ const GET_CHARACTER = gql `
   export const useCharacter = (id) => {
  //complete the useCharacter() wrapper function here
   };
-

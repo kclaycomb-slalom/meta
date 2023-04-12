@@ -33,7 +33,7 @@ export default function Search() {
         loading,
         error,
         data,
-        
+
     });
 
     return (

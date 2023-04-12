@@ -13,7 +13,7 @@ export default function CharactersList() {
 
   return (
     <div></div>
-    
+
     //write the html/logic to return a grid displaying the name and image of the character
     //Note that the queried data is available in the variable "data".
 
