@@ -1,8 +1,3 @@
-output "private_key" {
-  value     = tls_private_key.user_key.private_key_pem
-  sensitive = true
-}
-
 output "id" {
   description = "The ID of the instance"
   value       = module.ec2_instance.id

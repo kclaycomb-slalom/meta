@@ -23,7 +23,7 @@ setup:
 		-backend-config="key=state/$(STATE_FILE)" && \
 	terraform state pull
 
-pull:
+pull: setup
 	terraform get -update && \
 	terraform state pull
 
