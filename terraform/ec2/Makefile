@@ -1,6 +1,6 @@
 # Terraform Taxonomy
 APP     := meta-onboarding
-ACCOUNT := 250251693220
+ACCOUNT := 497031296963
 ENV     := dev
 REGION  := us-west-2
 BUCKET  := tfstate-bucket-$(ACCOUNT)
