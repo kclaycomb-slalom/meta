@@ -8,5 +8,13 @@ terraform {
       source  = "hashicorp/aws"
       version = ">= 1.0"
     }
+    local = {
+      source  = "hashicorp/local"
+      version = ">= 1.0"
+    }
+    http = {
+      source  = "hashicorp/http"
+      version = ">= 1.0"
+    }
   }
 }

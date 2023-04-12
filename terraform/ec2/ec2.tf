@@ -9,6 +9,9 @@ module "ec2_instance" {
   key_name      = aws_key_pair.generated_key.key_name
   monitoring    = true
   subnet_id     = data.aws_subnet.subnet_target.id
+  root_block_device = {
+    encrypted = true
+  }
   metadata_options = {
     http_tokens = "required"
   }
