@@ -7,7 +7,7 @@ resource "local_file" "ansible_inventory" {
   #    ignore_changes = content
   #  }
   content = <<EOF
-[meta]
+[meta_instances]
 "${module.ec2_instance.public_ip}"
 EOF
 }
