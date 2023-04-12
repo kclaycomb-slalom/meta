@@ -31,4 +31,3 @@ build {
     "source.amazon-ebs.ubuntu"
   ]
 }
-
