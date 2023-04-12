@@ -3,3 +3,5 @@
   path: ../../roles
 - src: brianshumate.consul
   path: ../../roles
+- src: meta-onboarding
+  path: ../../roles
