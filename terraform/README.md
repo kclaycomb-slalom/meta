@@ -8,6 +8,7 @@
 ## Quick start
 There are a few assumptions about the terraform code.
 <ol>
+  <li>You have created a ssh key at ~/.ssh/id_rsa.pub</li>
   <li>The terraform code should be immutable</li>
   <li>Mutable code should go into the terraform wrapper -> Makefile</li>
 </ol>
@@ -42,6 +43,11 @@ Running the code should be as easy as
 │   └── variables.tf
 └── modules
     └── terraform-aws-ec2-instance
+```
+
+## Creating a ssh key
+```
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 
 ## Creators
