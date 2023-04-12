@@ -8,6 +8,7 @@
 ## Quick start
 There are a few assumptions about the terraform code.
 <ol>
+  <li>The terraform s3 state bucket must be created in the right account in us-west-1 as tfstate-bucket-$(ACCOUNT)</li>
   <li>You have created a ssh key at ~/.ssh/id_rsa.pub</li>
   <li>The terraform code should be immutable</li>
   <li>Mutable code should go into the terraform wrapper -> Makefile</li>
