@@ -13,7 +13,7 @@ pull: clean
 	ansible-galaxy install -r requirements.yml
 
 playbook: pull
-	ansible-playbook main.yml --tags ${tags} --limit ${limit}
+	ansible-playbook main.yml -i ../../inventory/hosts.ini --tags ${tags} --limit ${limit}
 
 test: pull
 	ansible-playbook main.yml --tags test --limit ${limit}
