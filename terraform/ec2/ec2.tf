@@ -2,7 +2,7 @@ module "ec2_instance" {
   source = "../modules/terraform-aws-ec2-instance"
   #version = "~> 3.0"
 
-  name = "meta-onboarding-${data.aws_caller_identity.current.user_id}"
+  name = "meta-onboarding-${local.extracted_user}"
 
   ami                    = var.ami
   instance_type          = var.ec2type
