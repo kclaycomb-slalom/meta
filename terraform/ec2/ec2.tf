@@ -1,6 +1,6 @@
 module "ec2_instance" {
-  source = "../modules/terraform-aws-ec2-instance"
-  #version = "~> 3.0"
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "~> 3.0"
 
   name = "meta-onboarding-${local.extracted_user}"
 
